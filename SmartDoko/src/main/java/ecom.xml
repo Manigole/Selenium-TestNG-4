@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Ecom Test">
+    <test name="Test Basics 1">
+        <parameter name="email" value="santosh.kh015@gmail.com"/>
+        <parameter name="pass" value="santosh@1234"/>
+        <parameter name="testng.metrics.report.logo" value = "https://i.ibb.co/FqtQyC5/rfh.png"/>
+        <parameter name="testng.metrics.report.name" value = "regression.html"/>
+        <parameter name="testng.metrics.report.appendTimestamp" value = "True"/>
+                <groups>
+                    <run>
+                        <include name = "Group1"></include>
+                        <include name = "Group2"></include>
+                    </run>
+                </groups>
+        <classes>
+            <class name="ecom">
+                <!--            <methods>-->
+                <!--                <include name="invokeBrowser"></include>-->
+                <!--                <include name="maximize"></include>-->
+                <!--                <include name="enterURL"></include>-->
+                <!--            </methods>-->
+            </class>
+        </classes>
+    </test> <!-- Test -->
+</suite> <!-- Suite -->
